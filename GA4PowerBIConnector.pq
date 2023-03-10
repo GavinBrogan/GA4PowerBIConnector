@@ -1,4 +1,4 @@
-﻿[Version = "0.7.2"]
+﻿[Version = "0.7.4"]
 section GA4PowerBIConnector;
 
 //Authentication credentials
@@ -214,6 +214,7 @@ Table.ExpandRecordColumnByKey = (table as table, columns as list, key as text) a
 
 // Data Source Kind description
 GA4PowerBIConnector = [
+    TestConnection = (dataSourcePath) => { "NavigationTable.Simple" },
     Authentication = [
         OAuth = [
             StartLogin = StartLogin,
